@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 import pl.coderslab.entity.Book;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 @Primary
@@ -14,6 +15,19 @@ public class JpaBookService implements BookService {
 
     public JpaBookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
+    }
+    @Override
+    public Optional<Book> get(Long id) {
+        return Optional.empty();
+    }
+    @Override
+    public void add(Book book) {
+    }
+    @Override
+    public void delete(Long id) {
+    }
+    @Override
+    public void update(Book book) {
     }
 
     @Override

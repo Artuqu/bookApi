@@ -10,9 +10,9 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    @OneToMany(mappedBy = "publisher", fetch= FetchType.EAGER)//eager ustawiamy, gdy pisze, że jest problem z sesją
 
-    private List<Book> books = new ArrayList<>();
+//    @OneToMany(mappedBy = "publisher", fetch= FetchType.EAGER)//eager ustawiamy, gdy pisze, że jest problem z sesją
+//    private List<Book> books = new ArrayList<>();
 
 
 
@@ -24,14 +24,14 @@ public class Publisher {
 
     }
 
-    public List<Book> getBooks() {
-        return books;
-    }
-
-    public Publisher setBooks(List<Book> books) {
-        this.books = books;
-        return this;
-    }
+//    public List<Book> getBooks() {
+//        return books;
+//    }
+//
+//    public Publisher setBooks(List<Book> books) {
+//        this.books = books;
+//        return this;
+//    }
 
     public long getId() {
         return id;
@@ -54,7 +54,7 @@ public class Publisher {
         return "Publisher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", books=" + books +
+//                ", books=" + books +
                 '}';
     }
 }

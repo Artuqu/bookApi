@@ -1,6 +1,8 @@
-bookApi.iml
-pom.xml
 # Default ignored files
+bookApi.iml/
+pom.xml/
+persistence.xml/
+resources/
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files

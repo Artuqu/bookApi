@@ -22,18 +22,19 @@ public class Author {
     private String Pesel;
     @Email
     private String email;
-    @OneToMany(mappedBy = "author")
-    private List<Book> books = new ArrayList<>();
 
+//    @OneToMany(mappedBy = "author")
+//    private List<Book> books = new ArrayList<>();
 
-    public List<Book> getBooks() {
-        return books;
-    }
-
-    public Author setBooks(List<Book> books) {
-        this.books = books;
-        return this;
-    }
+//
+//    public List<Book> getBooks() {
+//        return books;
+//    }
+//
+//    public Author setBooks(List<Book> books) {
+//        this.books = books;
+//        return this;
+//    }
 
     public Author() {
     }
@@ -78,7 +79,7 @@ public class Author {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+//                ", books=" + books +
                 '}';
     }
 }

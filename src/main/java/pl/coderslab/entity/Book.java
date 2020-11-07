@@ -14,7 +14,8 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne
+            (cascade = {CascadeType.ALL})
     @NotNull
     @Size(max=255)
     private Author author;
@@ -22,7 +23,8 @@ public class Book {
     @Size(max=255)
     private String isbn;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne
+            (cascade = {CascadeType.ALL})
     @NotNull
     @Size(max=255)
     private Publisher publisher;
